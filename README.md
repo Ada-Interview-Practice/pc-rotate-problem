@@ -75,3 +75,43 @@ Rotating the following list
 by 5 produces
 
 2 → 1
+
+## Notes for the Interviewer
+
+### Clarifying Questions
+
+#### Q: What should I do if there's only one node in the list or an empty list?
+
+A: You can assume the list will have at least two nodes
+
+#### Q: What should I do if invalid input is passed in?
+
+A: You can assume that the input will be valid.
+
+#### Q: What should I do if k is negative or zero?
+
+A: You can assume that k will be a positive integer.
+
+#### Q: What should I do if there's a cycle in the input list?
+
+A: You can assume there will be no cycle.
+
+### Hints
+
+- If your candidate struggles with an initial algorithm, encourage them to walk through an example and describe how they would do it using only pen and paper.
+
+- If your candidate struggles to determine how to handle cases where `k` is greater than the length of the list, encourage them to first solve the simpler case where `k` is less than the length of the list. This will make the first 2 test cases pass.
+
+- If your candidate's result has a cycle in it, the assertions will fail. If your candidate runs into this, encourage them to print the list nodes one by one to determine where the cycle happens in their list. This is a tricky problem where it's very easy to accidentally make a cycle!
+
+## Optional Bonus At-Home Challenges
+
+To be attempted after completing the interview.
+
+- What's the complexity of the first sample solution? What's the complexity of the second sample solution? Which has the better complexity? What would it look like to achieve the same optimal complexity with a normal Python list instead of a linked list? (VERY difficult)
+
+- What would be the impact on complexity of the first solution if we didn't modulo `k` by the length of the list?
+
+- Expand your solution so it can handle negative numbers. Negative numbers should cause the list to rotate in the opposite direction.
+
+- What if the input were guaranteed to be one large cycle? How would your solution change? What impact would this have on complexity?
