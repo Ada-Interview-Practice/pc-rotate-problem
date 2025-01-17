@@ -6,7 +6,7 @@ Problem belonging to the post-classroom Mock Interview Question Repository.
 
 Our goal is to write a function that will rotate a linked list by `k` places to the right.
 
-For example,if we have the following input list:
+For example, if we have the following input list:
 
 a → b → c → d → e
 
